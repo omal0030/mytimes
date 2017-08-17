@@ -18,7 +18,7 @@ header {
   padding-top: 10px;
   background-color: white;
 }
-header p {
+.header p {
   padding-left: 10px;
 }
 .logo {
@@ -47,12 +47,24 @@ a {
 }
 .container {
   display: flex;
-  top: 70px;
+  top: 100px;
   flex-direction: column;
   position: relative;
   align-content: space-between;
   float: left;
-  margin: 40px 30px 0 0;
+}
+h1,
+h2 {
+  color: white;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+}
+h1 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
 }
 p{
   font-family: Georgia;
@@ -65,22 +77,19 @@ p{
 .main {
   width: 630px;
   display: flex;
-  margin: 10px 10px;
+  margin: 0 40px 0 0;
 }
 .headline {
   background-image: url("../images/wine-img-story-main.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  height: 400px;
-  color: white;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 40px;
+  height: 300px;
+  padding-left: 20px;
 }
 .columns-below {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 150px;
@@ -96,60 +105,87 @@ p{
 .burger-headline {
   display: flex;
   flex-direction: column;
-  width: 300px;
   position: relative;
 }
 .orca-headline {
   display: flex;
-  align-items: horizontal;
   text-align: left;
   flex-direction: column;
 }
 .earth {
-  border: 1px solid orange;
   background-image: url("../images/fence-img-story-2.png");
   height: 300px;
-  color: white;
   text-align: center;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
 }
 .camera {
-  border: 1px solid pink;
   background-image: url("../images/camera-img-story-3.png");
   height: 300px;
-  width: 300px;
   display: flex;
   flex-direction: column;
   position: relative;
-  color: white;
   text-align: center;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
 }
 
 /*                  Middle Column Content            */
 
 .middle {
-  border: 1px dotted silver;
-  width: 3000;
+  width: 300px;
   display: flex;
+  margin: 0 40px 0 0;
 }
 .cats-headline {
   background-image: url("../images/cat-img-story-1.png");
   height: 300px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   text-align: center;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
+  align-items:center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*                   Sidebar Column Content            */
 
 .sidebar {
-  border: 1px dotted brown;
-  width: 2400px;
+  width: 240px;
+  flex-direction: column;
+  display: flex;
+  margin: 0 0 0 0;
+}
+.news-bites {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.news p {
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 0 20px 15px 20px;
+}
+.news {
+  background-color: WhiteSmoke;
+}
+
+/*                     Footer Content            */
+
+.footer {
+font-family: Verdana;
+font-size: 12px;
+background-color: MediumAquamarine;
+display: flex;
+width: 100%;
+justify-content:center;
+text-align: center;
+margin:auto;
+padding: 100px;
+flex-direction: column;
+}
+.footer-logo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: White;
 }
